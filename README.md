@@ -156,4 +156,12 @@ Launch
 
     python3 /opt/sao-launcher/main.py
 
-3 - Once the shortcut is set, you can use it to open the launcher at any time
+3 - Once the shortcut is set, you can use it to open the launcher at any time.
+
+
+Go further
+-----
+
+For further immersion, you can install the font : SAO UI TT.
+
+To make the launcher more visible, you can install the extension Blur my Shell, to set a blur on the background.

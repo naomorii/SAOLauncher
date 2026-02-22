@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48"
+   height="48"
+   version="1"
+   id="svg4"
+   sodipodi:docname="Ptyxis.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="12.28125"
+     inkscape:cx="28.783715"
+     inkscape:cy="24.346056"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <circle
+     style="fill:#ffffff;stroke-width:1.92"
+     id="path4"
+     cx="24"
+     cy="24"
+     r="24" />
+  <rect
+     y="10.559999"
+     width="30.720001"
+     height="26.880001"
+     rx="2.3040004"
+     ry="2.3040004"
+     style="fill:#4f4f4f;stroke-width:1.92"
+     id="rect1"
+     x="8.6400003" />
+  <rect
+     x="22.080002"
+     y="31.68"
+     width="7.6800003"
+     height="1.9200001"
+     rx="0.57600009"
+     ry="0.57600009"
+     style="fill:#62c9ea;stroke-width:1.92"
+     id="rect2" />
+  <rect
+     transform="matrix(0.72149722,-0.69241733,0.72149722,0.69241733,0,0)"
+     x="-14.917289"
+     y="31.826803"
+     width="8.6995544"
+     height="2.1753685"
+     rx="0.65280253"
+     ry="0.65280253"
+     style="fill:#5f96a8;stroke-width:1.92"
+     id="rect3" />
+  <rect
+     transform="matrix(0.72149722,0.69241733,0.72149722,-0.69241733,0,0)"
+     x="25.298779"
+     y="-8.3892612"
+     width="8.6995544"
+     height="2.1753685"
+     rx="0.65280253"
+     ry="0.65280253"
+     style="fill:#62c9ea;stroke-width:1.92"
+     id="rect4" />
+</svg>

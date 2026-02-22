@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48"
+   height="48"
+   version="1"
+   id="svg2"
+   sodipodi:docname="utilities-system-monitor.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="12.28125"
+     inkscape:cx="28.86514"
+     inkscape:cy="20.356234"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <circle
+     style="fill:#ffffff"
+     id="path3"
+     cx="23.898218"
+     cy="23.979643"
+     r="24" />
+  <rect
+     style="fill:#4f4f4f;stroke-width:2.1875"
+     width="34.999989"
+     height="35"
+     x="6.5000095"
+     y="6.5"
+     rx="10.499998"
+     ry="10.5"
+     id="rect1" />
+  <path
+     style="opacity:0.15;stroke-width:2.1875"
+     d="M 10.588752,8.6875003 C 9.781614,9.3100348 9.0691567,10.046255 8.4738836,10.875 H 39.526123 C 38.930849,10.046255 38.218395,9.3100348 37.411255,8.6875003 Z M 6.6452719,15.25 C 6.5506629,15.818713 6.5,16.405335 6.5,17.001709 V 17.4375 h 34.999991 v -0.435791 c 0,-0.596374 -0.05064,-1.182996 -0.145271,-1.751709 z M 6.5,21.8125 V 24 h 34.999991 v -2.1875 z m 0,6.5625 v 2.1875 H 41.499991 V 28.375 Z m 0.7604975,6.5625 c 0.3152818,0.783296 0.7282056,1.512039 1.2133774,2.1875 H 39.526114 c 0.485172,-0.675461 0.898097,-1.404204 1.21338,-2.1875 z"
+     id="path1" />
+  <path
+     style="fill:none;stroke:#00e441;stroke-width:4.375;stroke-linejoin:round"
+     d="M 6.5000088,24 H 11.750007 L 16.125006,15.25 19.625005,30.5625 25.750004,10.875 30.125003,34.9375 35.375001,24 h 6.124998"
+     id="path2" />
+</svg>

@@ -165,3 +165,9 @@ Go further
 For further immersion, you can install the font : SAO UI TT.
 
 To make the launcher more visible, you can install the extension Blur my Shell, to set a blur on the background.
+
+
+Credits
+-----
+
+All credit goes to the original author of Sword Art Online : Reki Kawahara.

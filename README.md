@@ -29,7 +29,7 @@ Installation
     If none of these options work, use these commands in the terminal :
 
     cd ~/Downloads/SAOLauncher-main/SAOLauncher-main/sao-launcher
-    sudo sh ./install.sh
+    sudo sh ./installer.sh
 
 4 - Let the installer start.
     Enter your admin password when asked and everything is installed.

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=SAO Launcher
-Comment=SAO Style Application Launcher
-Exec=python3 /opt/saolauncher/saolauncher.py
-Icon=/opt/saolauncher/icons/Skills_on.svg
-Terminal=false
-Type=Application
-Categories=Utility;

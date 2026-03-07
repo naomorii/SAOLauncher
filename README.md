@@ -7,7 +7,7 @@ This app is a fan-based desktop app launcher for Linux, based on Sword Art Onlin
 
 It shows an animated drop down menu to start your selected apps as Kirito uses his in-game menu in SAO.
 
-When the command is used (or the shortcut, if set), the launcher appears in the foreground for you to start the app you want, without having to look for it.
+When the or the shortcut is used, the launcher appears in the foreground for you to start the app you want, without having to look for it.
 As soon as the chosen app starts, the launcher collapses and closes itself.
 
 Compatibility

@@ -31,9 +31,9 @@ if [ $? -eq 0 ]; then
         sudo cp saolauncher.desktop /usr/share/applications/
 
         # Create config directory in user's home and copy config
-        sudo mkdir -p "$CONFIGDIR"
-        sudo cp launcher_config.json "$CONFIGDIR/"
-        sudo cp -r icons "$CONFIGDIR/"
+        mkdir -p "$CONFIGDIR"
+        cp launcher_config.json "$CONFIGDIR/"
+        cp -r icons "$CONFIGDIR/"
 
     }
 

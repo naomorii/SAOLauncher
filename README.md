@@ -27,7 +27,6 @@ Installation
 
 3 - Run the following commands in the terminal :
 
-    cd ~/Downloads/SAOLauncher-main/sao-launcher
     sudo chmod +x ~/Downloads/SAOLauncher-main/sao-launcher/installer.sh
 
 Run the file named "installer.sh" with a double click or right click it, then click "run as executable".

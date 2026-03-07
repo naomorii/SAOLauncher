@@ -25,32 +25,49 @@ Installation
 
 2 - Extract the files from the archive
 
-3 - Move the sao-launcher folder to /opt/
+3 - Run the file named "installer.sh" with a double click or right click it, then click "run as executable".
+    If none of these options work, use these commands in the terminal :
 
-You may need to open the folder as admin.
+    cd ~/Downloads/SAOLauncher-main/SAOLauncher-main/sao-launcher
+    sudo sh ./install.sh
 
-4 - Install all the dependencies with this command in the terminal :
-
-    sudo dnf install python3-gobject gtk4 gdk-pixbuf2 librsvg2
+4 - Let the installer start.
+    Enter your admin password when asked and everything is installed.
 
 
 Customization
 -----
 
-You can edit the structure of the launcher as you want :
+To customize the launcher, click the "+" button in the launcher itself.
+- Each icon can be changed from the "Icons" button".
+- You can edit the structure of the launcher as you want from "Config File" button :
 
 1 - Architecture of the menu
 
-        menu_items = {
-            "Gaming": {"Games": {"Steam": None, "Heroic Games Launcher": None}, "Vocal": {"Discord": None}},
-            "Desktop": {"Mail": {"Thunderbird": None}, "Office Suite": {"Only Office": None}, "Scanner": {"Document Scanner": None}, "Image Editing": {"Krita": None, "Inkscape": None}, "Coding": {"Geany": None, "FileZilla": None}},
-            "Web": {"Chrome": None},
-            "Explorer": {"Files": None},
-            "Settings": {"Input Remapper": None, "Software": None, "Extension Manager": None, "System Update": None, "Nobara Driver Manager": None, "Terminal": None, "Disks": None, "Disk Usage Analyzer": None, "System Monitor": None, "Adjustments": None, "Parameters": None},
-            "Close": None
-        }
+        {
+          "menu_items": {
+            "Gaming": {
+              "Games": {
+                "Steam": null,
+                "Heroic Games Launcher": null
+              },
+              "Vocal": {...}
+            },
 
-In the first menu will appear : Gaming, Desktop, Web, Explorer, settings and close.
+            "Desktop": {...},
+
+            "Web": {...},
+
+            "Explorer": {...},
+
+            "Settings": {...},
+    
+            "Edit SAO Launcher": null,
+
+            "Close": null
+          },
+
+In the first menu will appear : Gaming, Desktop, Web, Explorer, Settings, Edit SAO Launcher and Close.
 
 If you click Gaming, a sub-menu will open with : Games and Vocal.
 
@@ -61,76 +78,42 @@ You can add as many buttons as you like, following the pattern above.
 
 2 - Definition of the button functions
 
-    # ---------- OPEN INPUT REMAPPER ----------
-    def open_remapper(self):
-        try:
-            subprocess.Popen(["sudo", "/usr/bin/input-remapper-gtk"])
-            self.close_app_sequence()
-        except Exception as e:
-            print("Error opening Input Remapper :", e)
+    "commands": {
+      "Steam": ["steam"],
+      "Heroic Games Launcher": ["flatpak", "run", "com.heroicgameslauncher.hgl"],
+      "Discord": ["flatpak", "run", "com.discordapp.Discord"],
+      "Thunderbird": ["flatpak", "run", "org.mozilla.Thunderbird"],
+      "Only Office": ["flatpak", "run", "org.onlyoffice.desktopeditors"],
+      "Chrome": ["flatpak", "run", "com.google.Chrome"],
+      "Document Scanner": ["simple-scan"],
+      "Krita": ["flatpak", "run", "org.kde.krita"],
+      "Inkscape": ["inkscape"],
+      "Geany": ["flatpak", "run", "org.geany.Geany"],
+      "FileZilla": ["flatpak", "run", "org.filezillaproject.Filezilla"],
+      "Files": ["nautilus"],
+      "Input Remapper": ["sudo", "/usr/bin/input-remapper-gtk"],
+      "Software": ["gnome-software"],
+      "Extension Manager": ["flatpak", "run", "com.mattjakeman.ExtensionManager"],
+      "System Update": ["sudo", "/usr/bin/nobara-updater"],
+      "Nobara Driver Manager": ["nobara-driver-manager"],
+      "Terminal": ["ptyxis"],
+      "Disks": ["gnome-disks"],
+      "Disk Usage Analyzer": ["baobab"],
+      "System Monitor": ["gnome-system-monitor"],
+      "Adjustments": ["gnome-tweaks"],
+      "Parameters": ["gnome-control-center"]
+    },
 
-    # ---------- OPEN SOFTWARE ----------
-    def open_logiciels(self):
-        try:
-            subprocess.Popen(["gnome-software"])
-            self.close_app_sequence()
-        except Exception as e:
-            print("Error opening Software :", e)
-
-    # ---------- OPEN EXTENSION MANAGER ----------
-    def open_extensions(self):
-        try:
-            subprocess.Popen(["flatpak", "run", "com.mattjakeman.ExtensionManager"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
-            self.close_app_sequence()
-        except Exception as e:
-            print("Error opening Extension Manager :", e)
-
-Depending of the way the app you want to start has been installed, you have to add a block with one of these 3 structures, from top to bottom :
-- package manager
-- Gnome store
-- flatpak
+Depending of the way the app you want to start has been installed (package manager, Gnome store, flatpak), you have to add a block with one of these structures.
 The label has to be exactly the same as in the architecture.
 
 
-3 - Call of the button functions
-
-    def handle_menu_click(self, btn, label, children, level, parent_btn, create_floating_menu):
-        if label == "Close":
-            self.show_close_confirmation()
-            return
-        if label == "Steam":
-            self.open_steam()
-            return
-        if label == "Heroic Games Launcher":
-            self.open_heroic()
-            return
-        [...]
-        if children:
-            create_floating_menu(children, level+1, btn)
-        btn.child_selected = True
-        if parent_btn.triangle_widget:
-            parent_btn.triangle_widget.queue_draw()
-        if parent_btn.line_widget:
-            parent_btn.line_widget.queue_draw()
-        print(f"{label} clicked")
-
-For each added button that should open an app, add the corresponding 3 lines as shown here to create a function stat will start the app.
-The label has to be exactly the same as in the architecture.
-The name of the function has to be exactly the same as in the function definition.
-
-
-4 - Icon setting
+3 - Icon setting
 
         self.ICON_MAP = {
             "Gaming": "One-Handed Straight Sword.svg",
             
             "Games": "Dual Blades.svg",
-            [...]
-        }
-        self.ICON_HOVER_MAP = {
-            "Gaming": "One-Handed Straight Sword_on.svg",
-            
-            "Games": "Dual Blades_on.svg",
             [...]
         }
         self.ICON_ACTIVE_MAP = {
@@ -140,10 +123,9 @@ The name of the function has to be exactly the same as in the function definitio
             [...]
         }
 
-Each button has 3 icons to be set :
+Each button has 2 icons to be set :
 - one base icon in self.ICON_MAP
-- one hover icon in self.ICON_HOVER_MAP (visible when the mouse passes over the button)
-- one active icon in self.ICON_ACTIVE_MAP (visible when you click the button)
+- one active icon in self.ICON_ACTIVE_MAP (visible when the mouse passes over the button or when you click it)
 The label has to be exactly the same as in the architecture.
 
 
@@ -154,7 +136,7 @@ Launch
 
 2 - Set the shortcut to issue the following command :
 
-    python3 /opt/sao-launcher/main.py
+    python3 /opt/saolauncher/saolauncher.py
 
 3 - Once the shortcut is set, you can use it to open the launcher at any time.
 

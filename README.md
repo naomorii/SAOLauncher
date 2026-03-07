@@ -25,14 +25,14 @@ Installation
 
 2 - Extract the files from the archive
 
-3 - Run the file named "installer.sh" with a double click or right click it, then click "run as executable".
-    If none of these options work, use these commands in the terminal :
+3 - Run the following commands in the terminal :
 
     cd ~/Downloads/SAOLauncher-main/sao-launcher
-    sudo sh ./installer.sh
+    sudo chmod +x ~/Downloads/SAOLauncher-main/sao-launcher/installer.sh
 
-4 - Let the installer start.
-    Enter your admin password when asked and everything is installed.
+Run the file named "installer.sh" with a double click or right click it, then click "run as executable".
+
+4 - Let the installer start. Enter your admin password when asked and everything is installed.
 
 
 Customization

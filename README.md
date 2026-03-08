@@ -38,8 +38,8 @@ Customization
 -----
 
 To customize the launcher, click the "+" button in the launcher itself.
-- Each icon can be changed from the "Icons" button".
-- You can edit the structure of the launcher as you want from "Config File" button :
+
+You can edit the structure of the launcher as you want from "Config File" button.
 
 1 - Architecture of the menu
 
@@ -107,25 +107,13 @@ Depending of the way the app you want to start has been installed (package manag
 The label has to be exactly the same as in the architecture.
 
 
-3 - Icon setting
+3 - Icon customization
 
-        self.ICON_MAP = {
-            "Gaming": "One-Handed Straight Sword.svg",
-            
-            "Games": "Dual Blades.svg",
-            [...]
-        }
-        self.ICON_ACTIVE_MAP = {
-            "Gaming": "One-Handed Straight Sword_on.svg",
-            
-            "Games": "Dual Blades_on.svg",
-            [...]
-        }
-
-Each button has 2 icons to be set :
-- one base icon in self.ICON_MAP
-- one active icon in self.ICON_ACTIVE_MAP (visible when the mouse passes over the button or when you click it)
-The label has to be exactly the same as in the architecture.
+After clicking on the "+" button in the launcher, each icon can be changed from the "Icons" button.
+Each button has a corresponding folder. The label has to be exactly the same as in the architecture.
+Each one of these folders contains 1 to 2 icons :
+- 1 main icon
+- 1 active icon (optional, used on a menu that has a submenu, visible when the mouse passes over the button or when you click it)
 
 
 Launch

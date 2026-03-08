@@ -27,7 +27,7 @@ Installation
 
 3 - Run the following commands in the terminal :
 
-    sudo chmod +x ~/Downloads/SAOLauncher-main/SAOLauncherInstaller.run
+    sudo chmod +x ~/Downloads/SAOLauncher-2.0/SAOLauncherInstaller.run
 
 Run the file named "SAOLauncherInstaller.run" with a double click or right click it, then click "Run as executable".
 
